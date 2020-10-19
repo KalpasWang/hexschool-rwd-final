@@ -1,0 +1,16 @@
+{
+  "name": "hexschool-rwd-final",
+  "version": "1.0.0",
+  "description": "六角 RWD 最終作業",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rwd",
+    "hexschool"
+  ],
+  "author": "Kalpas Wang",
+  "license": "ISC",
+  "dependencies": {}
+}
