@@ -4,7 +4,7 @@
   "description": "六角 RWD 最終作業",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pug pug --pretty --out ."
   },
   "keywords": [
     "rwd",

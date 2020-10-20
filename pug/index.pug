@@ -1,3 +1,23 @@
-include ./includes/header.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 六角西餐廳
+    link(rel="shortcut icon", href="https://www.hexschool.com/favicon.ico", type="image/x-icon")
+    meta(name="description", content="六角學院 RWD 最終作業")
+    meta(name="keywords", content="Kalpas Wang, HexSchool, RWD, 最終作業")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
 
-include ./includes/footer.pug
+    meta(property="og:title" content="六角學院 RWD 最終作業")
+    meta(property='og:description' content='由王偉航（Kalpas Wang）所練習的 RWD 最終作業')
+    meta(property='og:url' content='網址')
+    meta(property='og:type' content='website')
+    meta(property='og:image' content='images/logo.png')
+    meta(property='og:image:type' content='png')
+    meta(property='og:image:width' content='224')
+    meta(property='og:image:height' content='50')
+  body
+    include ../includes/header.pug
+
+    include ../includes/footer.pug
