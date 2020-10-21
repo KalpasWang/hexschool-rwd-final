@@ -4,7 +4,8 @@
   "description": "六角 RWD 最終作業",
   "main": "index.js",
   "scripts": {
-    "build": "pug pug --pretty --out ."
+    "build": "pug pug --pretty --out .",
+    "watch": "pug pug --pretty --watch --out ."
   },
   "keywords": [
     "rwd",
