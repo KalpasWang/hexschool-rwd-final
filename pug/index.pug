@@ -5,6 +5,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title 六角西餐廳
     link(rel="shortcut icon", href="https://www.hexschool.com/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css")
     link(rel="stylesheet", href="css/all.css")
     meta(name="description", content="六角學院 RWD 最終作業")
     meta(name="keywords", content="Kalpas Wang, HexSchool, RWD, 最終作業")
@@ -20,5 +21,25 @@ html(lang="en")
     meta(property='og:image:height' content='50')
   body
     include ../includes/header.pug
+
+    section#feature
+      hr
+      h2 客人總是在詢問 
+        br 
+        | 這麼好吃的秘訣是什麼
+      .content
+        .item
+          img(src="feature_1.png", alt="Taiwan Vegetables")
+          h3 台灣本土蔬菜
+          p In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
+        .item
+          img(src="feature_2.png", alt="Professional Chief")
+          h3 專業米其林廚師
+          p Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+        .item
+          img(src="feature_3.png", alt="No Give In")
+          h3 對於專業不能退讓
+          p Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
+
 
     include ../includes/footer.pug
