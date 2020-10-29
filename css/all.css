@@ -53,10 +53,26 @@ table {
 
 /* CSS RESET END */
 
+/* 全域設定 */
+
 body {
   background: #efe9e7;
   font-family: '微軟正黑體', sans-serif;
+  color: #3d1101;
 }
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1024px;
+  padding: 0 42px;
+  margin: auto;
+}
+
+/* 頁首區域 */
 
 header {
   position: relative;
@@ -68,12 +84,6 @@ nav {
   background: rgba(0,0,0,0.75);
   position: absolute;
   top: 0;
-}
-
-.container {
-  max-width: 1024px;
-  padding: 0 42px;
-  margin: auto;
 }
 
 .flex-wrapper {
@@ -137,4 +147,49 @@ nav li a {
 
 .banner p {
   line-height: 1.4;
+}
+
+/* 餐廳特色區域 */
+
+#feature {
+  padding: 82px 0 50px;
+}
+
+.title-wrap {
+  width: 460px;
+  margin: auto;
+  border-bottom: 1px solid #979797;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title-wrap .title {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin: auto;
+  background: #efe9e7;
+  display: inline-block;
+  transform: translateY(50%);
+  padding: 0 12px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.content .item {
+  text-align: center;
+  width: 260px;
+}
+
+.content .item img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.content .item h3 {
+  font-size: 18px;
+  margin-bottom: 11px;
 }
