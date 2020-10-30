@@ -73,6 +73,33 @@ html(lang="en")
               blockquote 
                 | 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
                 cite 美麗萬分
+    section#ordering
+      .container
+        h2.title 
+          | 我們的位置不太夠坐
+          br
+          | 要不要先定位呢？
+          |
+        .flex-between-wrapper
+          img(src="assets/map.png", alt="location")
+          form
+            label.label-block(for="name") 姓名
+            input#name(type="text", placeholder="六角講師吃尾牙")
+            label.label-block(for="phone") 電話
+            input#phone(type="tel", placeholder="02-1234567")
+            label.label-block(for="email") 信箱
+            input#email(type="email", placeholder="test@gmail.com")
+            label.label-block(for="amount") 人數
+            input#amount(type="num")
+            p 是否需要素食
+            label(for="yes") 是
+            input#yes(type="radio", name="veg" value="y")
+            label(for="no") 否
+            input#no(type="radio", name="veg", value="n")
+            .btn-group
+              input(type="reset", value="取消")
+              input(type="submit", value="送出")
+            
 
 
 

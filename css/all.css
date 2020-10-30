@@ -79,9 +79,16 @@ body {
   height: 100%;
 }
 
-.flex-around-wrapper {
+.flex-between-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-around-wrapper {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 100%;
 }
