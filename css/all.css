@@ -64,6 +64,8 @@ body {
 .title {
   font-size: 24px;
   font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .container {
@@ -82,14 +84,14 @@ body {
 .flex-between-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
 }
 
 .flex-around-wrapper {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
 }
 
@@ -107,18 +109,15 @@ nav {
   top: 0;
 }
 
+nav .flex-between-wrapper {
+  align-items: center;
+}
+
 nav h1 a {
-	display: block;
-	background-image: url(../assets/logo_l.png);
-  background-image: url(../assets/logo_l.svg);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position-y: center;
-	width: 240px;
-	height: 48px;
-	text-indent: 101%;
-	overflow: hidden;
-  white-space: nowrap;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
 }
 
 nav ul {
@@ -178,14 +177,11 @@ nav li a {
 }
 
 .title-wrap .title {
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  margin: auto;
-  background: #efe9e7;
   display: inline-block;
-  transform: translateY(50%);
+  font-size: 20px;
   padding: 0 12px;
+  background: #efe9e7;
+  transform: translateY(50%);
 }
 
 .content {
@@ -277,4 +273,130 @@ nav li a {
 
 .comment blockquote cite::before {
   content: '-- '
+}
+
+/* 訂位區域 */
+
+#ordering {
+  padding: 50px 42px;
+  background: rgba(250,250,250,.7);
+  color: #3d1101;
+}
+
+#ordering h2 {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+#ordering .flex-between-wrapper {
+  position: relative;
+}
+
+.ordering-form {
+  width: calc(100% - 482px);
+  margin-left: 20px;
+}
+
+.ordering-form .block-label{
+  display: block;
+  margin-bottom: 6px;
+}
+
+.ordering-form .block-input {
+  width: 100%;
+  background: #fff;
+  color: #4a4a4a;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  padding: 5px 0 5px 14px;
+  margin-bottom: 12px;
+}
+
+.ordering-form p {
+  margin-bottom: 6px;
+}
+
+.ordering-form .btn-group {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-group input {
+  padding: 6px 22px;
+  outline: none;
+  border: none;
+  background: rgba(0,0,0,.35);
+  color: #fff;
+  margin-left: 6px;
+  margin-right: 0;
+}
+
+.btn-group input[type="submit"] {
+  background: #f56c23;
+}
+
+/* 頁尾資訊 */
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 42px;
+}
+
+.about, .contact {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.other-info {
+  margin-left: auto;
+  text-align: right;
+}
+
+footer .title {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.other-info h2 {
+  margin-bottom: 22px;
+}
+
+.other-info h2 a {
+  display: block;
+	background-image: url(../assets/logo.png);
+  background-image: url(../assets/logo.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+	width: 243px;
+	height: 48px;
+	text-indent: 101%;
+	overflow: hidden;
+  white-space: nowrap;
+}
+
+.other-info ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.other-info ul a {
+  font-size: 36px;
+  margin-left: 12px;
+}
+
+.fa-google-plus {
+  color: #db4437;
+}
+
+.fa-twitter {
+  color: #41abe1;
+}
+
+.fa-facebook {
+  color: #3a5795;
 }
