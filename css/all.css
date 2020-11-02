@@ -101,6 +101,10 @@ body {
   height: 100%;
 }
 
+.d-none {
+  display: none;
+}
+
 /* 頁首區域 */
 
 header {
@@ -140,6 +144,14 @@ nav li + li {
 nav li a {
   text-decoration: none;
   color: #fff;
+  text-align: center;
+}
+
+.menu-bars {
+  display: none;
+  font-size: 21px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .banner {
@@ -166,6 +178,54 @@ nav li a {
 
 .banner p {
   line-height: 1.4;
+}
+
+@media(max-width: 735px) {
+  nav h1 a {
+    font-size: 18px;
+  }
+  
+  nav ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s;
+    margin-top: 1px;
+    position: absolute;
+    z-index: 10;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75);
+  }
+  
+  nav li + li {
+    margin-left: 0;
+  }
+  
+  nav li a {
+    padding: 8px 0;
+    display: block;
+    letter-spacing: 5px;
+  }
+  
+  nav li a:hover {
+    background: #efe9e7;
+    color: #3d1101;
+  }
+
+  .banner {
+    background: #190401 url(../assets/header_mobile.png) no-repeat center center;
+  }
+
+  .menu-bars {
+    display: block;
+    margin-right: 11px;
+  }
+
+  .menu-show ul {
+    max-height: 200px;
+  }
 }
 
 /* 餐廳特色區域 */
