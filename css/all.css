@@ -180,7 +180,7 @@ nav li a {
   line-height: 1.4;
 }
 
-@media(max-width: 735px) {
+@media(max-width: 567px) {
   nav h1 a {
     font-size: 18px;
   }
@@ -365,8 +365,12 @@ nav li a {
   margin-bottom: 38px;
 }
 
-#ordering .flex-between-wrapper {
-  position: relative;
+
+#ordering img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: 35% 50%;
 }
 
 .ordering-form {
@@ -395,12 +399,12 @@ nav li a {
 }
 
 .ordering-form .btn-group {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  padding-top: 30px;
+  text-align: right;
 }
 
 .btn-group input {
+  display: inline-block;
   padding: 6px 22px;
   outline: none;
   border: none;
@@ -412,6 +416,22 @@ nav li a {
 
 .btn-group input[type="submit"] {
   background: #f56c23;
+}
+
+@media(max-width: 767px) {
+  #ordering .flex-between-wrapper {
+    display: block;
+  }
+
+  #ordering img {
+    display: block;
+  }
+
+  .ordering-form {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 /* 頁尾資訊 */
@@ -479,4 +499,23 @@ footer .title {
 
 .fa-facebook {
   color: #3a5795;
+}
+
+@media(max-width: 767px) {
+  footer .container {
+    display: block;
+  }
+
+  .about, .contact {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .contact, .other-info {
+    margin-top: 30px;
+  }
+
+  .other-info h2 a {
+    margin-left: auto;
+  }
 }
