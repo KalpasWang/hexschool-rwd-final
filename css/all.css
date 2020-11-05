@@ -580,3 +580,97 @@ footer .title {
     margin-left: auto;
   }
 }
+
+/* 
+//////////////////
+//   選購頁面    //
+//////////////////
+*/
+
+.shopping-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 48px;
+}
+
+/* 側邊選單 */
+
+aside {
+  width: 220px;
+  margin-right: 20px;
+}
+
+aside h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+aside .fa-leaf {
+  font-size: 32px;
+}
+
+aside li a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 8px;
+  border-bottom: 1px solid #3d1101;
+  color: #3d1101;
+  text-decoration: none;
+}
+
+aside li a:hover {
+  background: #3d1101;
+  color: #fff;
+}
+
+/* 選購列表區域 */
+
+main {
+  flex-grow: 1;
+}
+
+.search-and-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  width: 66.666%;
+}
+
+main .search-bar input {
+  width: calc(100% - 34px);
+  height: 32px;
+  line-height: 32px;
+  background: transparent;
+  border: 2px solid #3d1101;
+  outline: none;
+  margin: 0;
+}
+
+main .search-bar button {
+  width: 36px;
+  height: 32px;
+  line-height: 32px;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background: #3d1101;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shopping-cart {
+}
+
+.shopping-cart .fa-shopping-cart {
+  vertical-align: baseline;
+  font-size: 32px;
+}
