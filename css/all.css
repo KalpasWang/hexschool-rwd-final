@@ -68,6 +68,19 @@ body {
   text-align: center;
 }
 
+.svg-title a {
+  display: block;
+	background-image: url(../assets/logo.png);
+  background-image: url(../assets/logo.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+	width: 243px;
+	height: 48px;
+	text-indent: 101%;
+	overflow: hidden;
+  white-space: nowrap;
+}
+
 .container {
   max-width: 1024px;
   padding: 0 42px;
@@ -522,19 +535,6 @@ footer .title {
   margin-bottom: 22px;
 }
 
-.other-info h2 a {
-  display: block;
-	background-image: url(../assets/logo.png);
-  background-image: url(../assets/logo.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
-	width: 243px;
-	height: 48px;
-	text-indent: 101%;
-	overflow: hidden;
-  white-space: nowrap;
-}
-
 .other-info ul {
   display: flex;
   justify-content: flex-end;
@@ -584,7 +584,7 @@ footer .title {
 }
 
 /* 
-//////////////////
+///////////////////
 //   選購頁面    //
 //////////////////
 */
@@ -878,3 +878,82 @@ main .search-bar button {
     margin-right: 0;
   }
 }
+
+/* 
+///////////////////
+//   登入頁面    //
+//////////////////
+*/
+
+.login-page {
+  padding: 50px 0;
+}
+
+.login-page .svg-title a {
+  margin: 0 auto;
+}
+
+.login-page h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.login {
+  width: 300px;
+  border-top: 3px solid #ff5e45;
+  padding: 15px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+  margin: auto;
+}
+
+.login h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.login .login-input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+.login p {
+  color: #ff5e45;
+  margin-top: 1px;
+}
+
+.login .btn-group {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login .btn {
+  padding: 6px 48px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: rgba(0,0,0,.35);
+  color: #fff;
+  text-decoration: none;
+}
+
+.login .btn-login {
+  background: #ff5e45;
+}
+
+
+
