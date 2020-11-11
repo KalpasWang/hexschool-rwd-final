@@ -943,7 +943,8 @@ main .search-bar button {
 }
 
 .login {
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   border-top: 3px solid #ff5e45;
   padding: 15px;
   box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
@@ -1000,4 +1001,131 @@ main .search-bar button {
   justify-content: space-between;
 }
 
+/* 
+///////////////////
+//   註冊頁面    //
+//////////////////
+*/
 
+.register-page {
+  padding: 50px 0;
+}
+
+.register-page .svg-title a {
+  margin: 0 auto;
+}
+
+.register-page .sub-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.register {
+  width: 90%;
+  max-width: 620px;
+  border-top: 3px solid #ff5e45;
+  padding: 15px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+  margin: auto;
+}
+
+.register h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.register-content {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+
+.law {
+  margin-right: 20px;
+  max-width: 285px;
+}
+
+.law h4 {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.law p {
+  line-height: 1.4;
+}
+
+.register-form {
+  max-width: 285px;
+}
+
+.register-form .label-email {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.register-form .label-pwd {
+  display: block;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.register .register-input, .repeat-pwd .register-input{
+  width: 100%;
+  padding: 6px 0 6px 30px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  margin-top: 3px;
+  outline: none;
+}
+
+.register .has-account {
+  display: block;
+  color: #ff5e45;
+  margin-top: 1px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.repeat-pwd {
+  position: relative;
+}
+
+.register i {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #3d1101;
+  opacity: 0.5;
+}
+
+.register .btn-primary {
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 575px) {
+  .register-content {
+    display: block;
+  }
+
+  .law {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .register-form {
+    max-width: 100%;
+  }
+}
