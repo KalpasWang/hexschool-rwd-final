@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixin"; 
+@import "reset"; 
+// @import "extend"; 
+@import "layout"; // 處理元件的位置與狀態等
+
+// components
+// @import "components/button";
+// @import "components/video";
+// @import "components/nivo";
+
+// global layout
+@import "header";
+@import "footer";
+
+// pages
+// @import "pages/index";
+// @import "pages/cart";
+// @import "pages/login";
+// @import "pages/register";

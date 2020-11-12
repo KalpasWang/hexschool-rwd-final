@@ -1,0 +1,108 @@
+.header {
+  position: relative;
+
+  .nav {
+    width: 100%;
+    height: 56px;
+    background: rgba(0,0,0,0.75);
+    position: absolute;
+    top: 0;
+  
+    &__logo {
+      text-decoration: none;
+      color: $text-white;
+      font-size: $text-xl;
+      font-weight: $font-black;
+      @include mobile-portrait() {
+        font-size: $text-md;
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @include mobile-portrait() {
+        display: block;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s;
+        margin-top: 1px;
+        position: absolute;
+        z-index: 10;
+        top: 56px;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.75);
+        &.menu-show {
+          max-height: 200px;
+        }
+      }
+    }
+  
+    &__menu-item + &__menu-item {
+      margin-left: 10px;
+      @include mobile-portrait() {
+        margin-left: 0;
+      }
+    }
+  
+    &__menu-link {
+      text-decoration: none;
+      color: $text-white;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 100px;
+      @include mobile-portrait() {
+        padding: 8px 0;
+        display: block;
+        letter-spacing: 5px;
+      }
+    }
+  
+    &__menu-link:hover {
+      background: $text-light;
+      color: $text-primary;
+    }
+  
+    &__mobile-menu-bars {
+      display: none;
+      font-size: $text-xl;
+      color: $text-white;
+      cursor: pointer;
+      @include mobile-portrait() {
+        display: block;
+        margin-right: 11px;
+      }
+    }
+  }
+
+  .banner {
+    width: 100%;
+    height: 420px;
+    background: #190401 url(../assets/header_desktop.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile-portrait() {
+      background: #190401 url(../assets/header_mobile.png) no-repeat center center;
+    }
+  
+    &__text-area {
+      padding: 20px 22px 26px;
+      color: $text-white;
+      background: rgba(0,0,0,.35);
+      text-align: center;
+    }
+  
+    &__title {
+      font-size: $text-xxl;
+      margin-bottom: 16px;
+    }
+  
+    &__subtitle, &__subtitle2 {
+      line-height: 1.4;
+    }
+  }
+}
