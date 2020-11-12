@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,6 +54,12 @@ table {
           box-sizing: border-box;
 }
 
+body {
+  background: #efe9e7;
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: #3d1101;
+}
+
 .l-container {
   max-width: 1024px;
   padding: 0 42px;
@@ -78,8 +85,51 @@ table {
   height: 100%;
 }
 
+.l-flex-safs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 575px) {
+  .l-flex-safs {
+    display: block;
+  }
+}
+
 .h-hide {
   display: none;
+}
+
+.c-card {
+  text-align: center;
+  width: 25.39%;
+}
+
+@media (max-width: 575px) {
+  .c-card {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.c-card__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.c-card__name {
+  font-size: 18px;
+  margin-bottom: 11px;
 }
 
 .header {
@@ -220,5 +270,33 @@ table {
 
 .header .banner__subtitle, .header .banner__subtitle2 {
   line-height: 1.4;
+}
+
+/* 餐廳特色區域 */
+.feature {
+  padding: 82px 0 50px;
+}
+
+.feature__title-area {
+  max-width: 460px;
+  margin: auto;
+  border-bottom: 1px solid #979797;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 575px) {
+  .feature__title-area {
+    border-bottom: none;
+  }
+}
+
+.feature__title {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 12px;
+  background: #efe9e7;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 /*# sourceMappingURL=all.css.map */

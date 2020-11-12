@@ -1,0 +1,22 @@
+.c-card {
+  text-align: center;
+  width: 25.39%;
+  @include mobile-portrait() {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: $text-md;
+    margin-bottom: 11px;
+  }
+}

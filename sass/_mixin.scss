@@ -4,8 +4,26 @@
   }
 };
 
+@mixin mobile-landscape {
+  @media (max-width: 767px) {
+    @content
+  }
+};
+
 @mixin tablet {
   @media (max-width: 991px) {
     @content
   }
 };
+
+@mixin img-replace-text($img-path, $width, $height) {
+  display: block;
+  background-image: url($img-path);
+  background-repeat: no-repeat;
+  background-position-y: center;
+	width: $width;
+	height: $height;
+	text-indent: 101%;
+	overflow: hidden;
+  white-space: nowrap;
+} 
