@@ -1,0 +1,38 @@
+body {
+  background: $bg-color;
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: $text-primary;
+}
+
+.l-container {
+  max-width: 1024px;
+  padding: 0 42px;
+  margin: auto;
+  @include tablet() {
+    padding: 0 11px;
+  }
+}
+
+.l-flex-sbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.l-flex-safs {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.l-flex-fsfs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.h-hide {
+  display: none;
+}
+

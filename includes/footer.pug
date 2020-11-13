@@ -1,22 +1,24 @@
-footer
-  .container.footer-wrapper
+footer.footer
+  .l-container.l-flex-fsfs
     .about
-      h3.title 關於 六角西餐廳
-      p Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. 
+      h3.about__title 關於 六角西餐廳
+      p.about__description Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. 
     .contact
-      h3.title 聯絡方式
-      ul
-        li 高雄市中正五路到底
-        li +886 886 886
-        li service@hexschool.com
+      h3.contact__title 聯絡方式
+      ul.contact__list
+        li.contact__list-item 高雄市中正五路到底
+        li.contact__list-item
+          a.contact__link(href="tel:+886886886") +886 886 886
+        li.contact__list-item
+          a.contact__link(href="mailto:service@hexschool.com") service@hexschool.com
     .other-info
-      h2.svg-title 
-        a(href="#") 六角西餐廳
-      ul.social-link
-        li: a
+      h2.other-info__title 
+        a.other-info__logo(href="index.html") 六角西餐廳
+      ul.other-info__social-list
+        li.other-info__social-item: a.other-info__social-link
           i.fab.fa-google-plus.fa-fw
-        li: a
+        li.other-info__social-item: a.other-info__social-link
           i.fab.fa-twitter.fa-fw
-        li: a
+        li.other-info__social-item: a.other-info__social-link
           i.fab.fa-facebook.fa-fw
           

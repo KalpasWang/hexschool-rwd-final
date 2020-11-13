@@ -1,17 +1,18 @@
 @import "variables";
 @import "mixin"; 
+@import "grid";
 @import "reset"; 
-// @import "extend"; 
-@import "layout"; // 處理元件的位置與狀態等
+@import "utilities"; // 處理元件的位置與狀態等 
+
+// global layout
+@import "layout"; 
 
 // components
 // @import "components/button";
 @import "components/card";
 // @import "components/nivo";
 
-// global layout
-@import "header";
-@import "footer";
+
 
 // pages
 @import "pages/index";

@@ -1,21 +1,3 @@
-@mixin mobile-portrait {
-  @media (max-width: 575px) {
-    @content
-  }
-};
-
-@mixin mobile-landscape {
-  @media (max-width: 767px) {
-    @content
-  }
-};
-
-@mixin tablet {
-  @media (max-width: 991px) {
-    @content
-  }
-};
-
 @mixin img-replace-text($img-path, $width, $height) {
   display: block;
   background-image: url($img-path);
@@ -27,3 +9,9 @@
 	overflow: hidden;
   white-space: nowrap;
 } 
+
+@mixin title-lg {
+  font-size: $text-xl;
+  font-weight: $font-medium;
+  line-height: 1.4;
+}

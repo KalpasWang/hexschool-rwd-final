@@ -14,6 +14,12 @@
     }
   }
 
+  &__content {
+    @include mobile-portrait() {
+      display: block;
+    }
+  }
+
   &__title {
     display: inline-block;
     font-size: $text-lg;
