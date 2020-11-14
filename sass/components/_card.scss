@@ -1,12 +1,5 @@
 .c-card {
   text-align: center;
-  width: 25.39%;
-  @include mobile-portrait() {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
 
   &__img {
     max-width: 100%;
@@ -15,8 +8,28 @@
     margin-bottom: 20px;
   }
 
-  &__name {
+  &__title {
     font-size: $text-md;
     margin-bottom: 11px;
+  }
+
+  &__body {
+    padding-top: 18px;
+  }
+
+  &__quote {
+    line-height: 1.5;
+  }
+
+  &__cite {
+    display: block;
+    text-align: right;
+    margin-top: 16px;
+    color: $text-primary;
+    opacity: 0.75;
+  }
+
+  &__cite::before {
+    content: '-- ';
   }
 }

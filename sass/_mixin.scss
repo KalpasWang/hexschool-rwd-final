@@ -12,6 +12,13 @@
 
 @mixin title-lg {
   font-size: $text-xl;
-  font-weight: $font-medium;
+  font-weight: $font-bold;
   line-height: 1.4;
+}
+
+@mixin setBgColorAndHover($baseColor) {
+  background-color: $baseColor;
+  &:hover {
+    background-color: darken($baseColor, 10%);
+  }
 }

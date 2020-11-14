@@ -1,0 +1,21 @@
+.c-btn {
+  padding: 9px 21px;
+  font-size: $text-sm;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: $text-white;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  cursor: pointer;
+
+  &--primary {
+    @include setBgColorAndHover(#f56c23);
+  }
+  
+  &--secondary {
+    @include setBgColorAndHover(#a09f9f);
+  }
+}

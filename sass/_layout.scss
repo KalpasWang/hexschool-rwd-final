@@ -1,3 +1,10 @@
+body {
+  background: $bg-color;
+  font-family: "Microsoft JhengHei", sans-serif;
+  color: $text-primary;
+  font-weight: $font-medium;
+}
+
 .header {
   position: relative;
 }
@@ -8,6 +15,10 @@
   background: rgba(0,0,0,0.75);
   position: absolute;
   top: 0;
+
+  .l-flex-sbc {
+    height: 100%;
+  }
 
   &__logo {
     text-decoration: none;

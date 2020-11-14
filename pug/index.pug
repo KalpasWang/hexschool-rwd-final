@@ -28,77 +28,77 @@ html(lang="en")
           h2.feature__title 客人總是在詢問 
             br 
             | 這麼好吃的秘訣是什麼
-        .feature__content.l-flex-safs
+        .l-flex-safs
           .c-card
             img.c-card__img(src="assets/feature_1.png", alt="Taiwan Vegetables")
-            h3.c-card__name 台灣本土蔬菜
+            h3.c-card__title 台灣本土蔬菜
             p.c-card__description In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.
           .c-card
             img.c-card__img(src="assets/feature_2.png", alt="Professional Chief")
-            h3.c-card__name 專業米其林廚師
+            h3.c-card__title 專業米其林廚師
             p.c-card__description Sed ullamcorper tellus erat, non ultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
           .c-card
             img.c-card__img(src="assets/feature_3.png", alt="No Give In")
-            h3.c-card__name 對於專業不能退讓
+            h3.c-card__title 對於專業不能退讓
             p.c-card__description Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.
-    section#main-chief
-      .container.flex-wrapper
-        .chief-pic
-        .chief-intro
-          h2 今日主廚：帕金森、梅在帕
-          h3 Tody Chief: Plum in Shock
-          p Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
-    section#testimonials
-      .container
-        h2.title 聽聽別人的感想
-        .flex-around-wrapper
-          .person
-            img(src="assets/avatar_1.png", alt="高雄一口吃")
-            .comment
-              h3 高雄一口吃
-              blockquote 
+    section#main-chief.main-chief
+      .l-container.l-flex-cc
+        .main-chief__pic
+        .main-chief__intro
+          h2.main-chief__title 今日主廚：帕金森、梅在帕
+          h3.main-chief__subtitle Tody Chief: Plum in Shock
+          p.main-chief__description Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.
+    section.testimonials
+      .l-container
+        h2.testimonials__title 聽聽別人的感想
+        .l-flex-sbfs
+          .c-card.l-flex-fsfs
+            img.c-card__img(src="assets/avatar_1.png", alt="高雄一口吃")
+            .c-card__body
+              h3.c-card__title 高雄一口吃
+              blockquote.c-card__quote 
                 | 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-                cite 產品經理
-          .person
-            img(src="assets/avatar_2.png", alt="廟口小霸王")
-            .comment
-              h3 廟口小霸王
-              blockquote 
+                cite.c-card__cite 產品經理
+          .c-card.l-flex-fsfs
+            img.c-card__img(src="assets/avatar_2.png", alt="廟口小霸王")
+            .c-card__body
+              h3.c-card__title 廟口小霸王
+              blockquote.c-card__quote 
                 | 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-                cite 金身道士
-          .person
-            img(src="assets/avatar_3.png", alt="春天也來了")
-            .comment
-              h3 春天也來了
-              blockquote 
+                cite.c-card__cite 金身道士
+          .c-card.l-flex-fsfs
+            img.c-card__img(src="assets/avatar_3.png", alt="春天也來了")
+            .c-card__body
+              h3.c-card__title 春天也來了
+              blockquote.c-card__quote 
                 | 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-                cite 美麗萬分
-    section#ordering
-      .container
-        h2.title 
+                cite.c-card__cite 美麗萬分
+    section#ordering.ordering
+      .l-container
+        h2.ordering__title 
           | 我們的位置不太夠坐
           br
           | 要不要先訂位呢？
           |
-        .flex-between-wrapper
-          img(src="assets/map.png", alt="location")
-          form.ordering-form
-            label.block-label(for="name") 姓名
-            input#name.block-input(type="text", placeholder="六角講師吃尾牙")
-            label.block-label(for="phone") 電話
-            input#phone.block-input(type="tel", placeholder="02-1234567")
-            label.block-label(for="email") 信箱
-            input#email.block-input(type="email", placeholder="test@gmail.com")
-            label.block-label(for="amount") 人數
-            input#amount.block-input(type="num")
-            p 是否需要素食
-            label(for="yes") 是
-            input#yes(type="radio", name="veg" value="y" checked="checked")
-            label(for="no") 否
-            input#no(type="radio", name="veg", value="n")
-            .btn-group
-              input.btn-sm.btn-secondary(type="reset", value="取消")
-              input.btn-sm.btn-primary(type="submit", value="送出")
+        .l-flex-sbfs
+          img.ordering__map(src="assets/map.png", alt="location")
+          form.ordering__form
+            label.ordering__label(for="name") 姓名
+            input#name.ordering__input(type="text", placeholder="六角講師吃尾牙")
+            label.ordering__label(for="phone") 電話
+            input#phone.ordering__input(type="tel", placeholder="02-1234567")
+            label.ordering__label(for="email") 信箱
+            input#email.ordering__input(type="email", placeholder="test@gmail.com")
+            label.ordering__label(for="amount") 人數
+            input#amount.ordering__input(type="num")
+            p.ordering__vegetables 是否需要素食
+            label.ordering__sm-label(for="yes") 是
+            input.ordering__radio#yes(type="radio", name="veg" value="y" checked="checked")
+            label.ordering__sm-label(for="no") 否
+            input.ordering__radio#no(type="radio", name="veg", value="n")
+            .ordering__buttons-group
+              input.c-btn.c-btn--secondary(type="reset", value="取消")
+              input.c-btn.c-btn--primary(type="submit", value="送出")
             
 
 
