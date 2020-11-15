@@ -1,0 +1,273 @@
+// 選購頁面
+
+.cart-page {
+  margin-top: 48px;
+  @include mobile-landscape() {
+    display: block;
+  }
+}
+
+// 側邊選單
+
+.sidebar {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 23px;
+  flex: 0 0 auto;
+  @include mobile-landscape() {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title {
+    @include title-md;
+    margin-bottom: 16px;
+  }
+
+  .fa-leaf {
+    font-size: 32px;
+  }
+
+  &__link {
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 8px;
+    border-bottom: 1px solid $text-primary;
+    color: $text-primary;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__link:hover {
+    background: $text-primary;
+    color: $text-white;
+  }
+}
+
+// 選購列表區域
+
+.main-products {
+  flex: 1 1 auto;
+}
+
+.top-bar {
+  flex-wrap: wrap;
+  @include mobile-portrait() {
+    display: block;
+  }
+}
+
+.search-bar {
+  position: relative;
+  width: 63.888%;
+  margin-bottom: 20px;
+  @include mobile-portrait() {
+    width: 100%;
+  }
+
+  &__input {
+    width: calc(100% - 34px);
+    height: 32px;
+    line-height: 32px;
+    background: transparent;
+    border: 2px solid $text-primary;
+    outline: none;
+    margin: 0;
+  }
+
+  &__submit {
+    width: 36px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    right: 0;
+    color: $text-white;
+    background: $text-primary;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+}
+
+.shopping-cart {
+  white-space: nowrap;
+  margin-left: auto;
+  margin-bottom: 26px;
+  @include mobile-portrait() {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+  &__cart-link {
+    text-decoration: none;
+    color: $text-primary;
+  }
+
+  &__cart-link:hover {
+    color: $text-secondary;
+  }
+
+  .fa-shopping-cart {
+    position: relative;
+    vertical-align: middle;
+    font-size: 32px;
+  }
+
+  // 顯示商品數量
+  .fa-shopping-cart::after {
+    content: '1';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff5e45;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #efe9e7;
+    position: absolute;
+    top: -2px;
+    right: -4px;
+  }
+}
+
+.products-list {
+  width: calc(100% + 20px);
+  flex-wrap: wrap;
+  @include tablet() {
+    width: 100%;
+  }
+}
+
+.product {
+  position: relative;
+  width: 30.5%;
+  text-align: center;
+  margin-right: 2.8%;
+  margin-bottom: 40px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+  @include tablet() {
+    width: 45%;
+    margin-right: 5%;
+  }
+  @include mobile-landscape() {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+  @include mobile-portrait() {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  // 彩帶容器
+  &__ribbon {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+
+  // 彩帶折角
+  &__ribbon::before,
+  &__ribbon::after {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: -1;
+    border-style: solid;
+  }
+
+  &__ribbon::before {
+    border-width: 5px 6px;
+    border-color: transparent transparent #078f6d transparent;
+    top: -5px;
+    left: 0;
+  }
+
+  &__ribbon::after {
+    border-width: 6px 5px;
+    border-color: transparent transparent transparent #078f6d;
+    bottom: 0;
+    right: -5px;
+  }
+  
+  // 彩帶主體
+  &__ribbon span {
+    position: absolute;
+    display: block;
+    width: 130px;
+    padding: 5px 0;
+    background-color: #0c9;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    left: -15px;
+    top: 15px;
+    transform: rotate(45deg);
+  }
+
+  &__favorite-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $text-white;
+    cursor: pointer;
+
+  }
+
+  &__img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 11px;
+  }
+
+  &__title {
+    font-size: $text-lg;
+  }
+
+  &__subtitle {
+    font-size: $text-xs;
+  }
+
+  // 裝飾用線條
+  &__subtitle::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: $text-primary;
+    margin: 8px auto 20px;
+  }
+
+  &__price {
+    font-size: $text-lg;
+    font-weight: $font-bold;
+    margin-bottom: 16px;
+  }
+
+  &__add-to-cart {
+    width: calc(100% - 20px);
+    margin: 0 10px 10px;
+    color: $text-secondary;
+    border: 2px solid $text-secondary;
+    border-radius: 3px;
+    background: transparent;
+    outline: none;
+    font-size: $text-base;
+    cursor: pointer;
+  }
+
+  &__add-to-cart:hover {
+    background: $text-secondary;
+    color: $text-white;
+  }
+}

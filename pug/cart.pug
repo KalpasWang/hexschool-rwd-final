@@ -21,73 +21,73 @@ html(lang="en")
     meta(property='og:image:height' content='50')
   body
     include ../includes/header.pug
-    .container.shopping-wrapper
-      aside
-        h2 
+    .cart-page.l-container.l-flex-fsfs
+      aside.sidebar
+        h2.sidebar__title 
           i.fas.fa-leaf 
           | &nbsp;線上訂購美食
-        ul
-          li
-            a(href="") 全部 (23)
-          li
-            a(href="") 只愛吃薯條 (18)
-          li
-            a(href="") 加熱就可食 (1)
-          li
-            a(href="") 不敗漢堡系列 (4)
+        ul.sidebar__list
+          li.sidebar__item
+            a.sidebar__link(href="") 全部 (23)
+          li.sidebar__item
+            a.sidebar__link(href="") 只愛吃薯條 (18)
+          li.sidebar__item
+            a.sidebar__link(href="") 加熱就可食 (1)
+          li.sidebar__item
+            a.sidebar__link(href="") 不敗漢堡系列 (4)
       
-      main
-        .search-and-cart
+      main.main-products
+        .top-bar.l-flex-sbfs
           .search-bar
-            input(type="text")
-            button
+            input.search-bar__input(type="text")
+            button.search-bar__submit
               i.fas.fa-search
           .shopping-cart
-            a(href="") 
+            a.shopping-cart__cart-link(href="") 
               | 結帳去&nbsp;&nbsp;|&nbsp;&nbsp;
               i.fas.fa-shopping-cart
               | &nbsp;&nbsp;
-        ul.product-list
+        ul.products-list.l-flex-fsfs
           li.product
-            .ribbon
+            .product__ribbon
               span 熱銷美食
-            .favorite
+            .product__favorite-icon
               i.far.fa-heart
-            img(src="assets/product_1.png")
-            h2 經典漢堡套餐
-            h3 Classic Hamburger Package
-            p.price $120 
-            button
+            img.product__img(src="assets/product_1.png")
+            h2.product__title 經典漢堡套餐
+            h3.product__subtitle Classic Hamburger Package
+            p.product__price $120 
+            button.product__add-to-cart
               i.fas.fa-shopping-cart
               | &nbsp;加入購物車
           li.product
-            .favorite
+            .product__favorite-icon
               i.far.fa-heart
-            img(src="assets/product_2.png")
-            h2 英俊香腸
-            h3 Handsome Sausage
-            p.price $1024
-            button
+            img.product__img(src="assets/product_2.png")
+            h2.product__title 英俊香腸
+            h3.product__subtitle Handsome Sausage
+            p.product__price $1024
+            button.product__add-to-cart
               i.fas.fa-shopping-cart
               | &nbsp;加入購物車
           li.product
-            .favorite
+            .product__favorite-icon
               i.far.fa-heart
-            img(src="assets/product_3.png")
-            h2 漢堡兄弟
-            h3 Hamburg Brothers
-            p.price $792
-            button
+            img.product__img(src="assets/product_3.png")
+            h2.product__title 漢堡兄弟
+            h3.product__subtitle Hamburg Brothers
+            p.product__price $792
+            button.product__add-to-cart
               i.fas.fa-shopping-cart
               | &nbsp;加入購物車
           li.product
-            .favorite
+            .product__favorite-icon
               i.far.fa-heart
-            img(src="assets/product_4.png")
-            h2 完美願望
-            h3 Dragon Ball Package
-            p.price $999,999
-            button
+            img.product__img(src="assets/product_4.png")
+            h2.product__title 完美願望
+            h3.product__subtitle Dragon Ball Package
+            p.product__price $999,999
+            button.product__add-to-cart
               i.fas.fa-shopping-cart
               | &nbsp;加入購物車
           

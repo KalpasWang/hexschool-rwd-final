@@ -12,8 +12,14 @@
 
 @mixin title-lg {
   font-size: $text-xl;
-  font-weight: $font-bold;
+  font-weight: $font-medium;
   line-height: 1.4;
+}
+
+@mixin title-md {
+  font-size: $text-lg;
+  font-weight: $font-medium;
+  line-height: 1.6;
 }
 
 @mixin setBgColorAndHover($baseColor) {

@@ -22,7 +22,7 @@
 
   &__title {
     display: inline-block;
-    @include title-lg;
+    @include title-md;
     padding: 0 12px;
     background: $bg-color;
     transform: translateY(50%);
