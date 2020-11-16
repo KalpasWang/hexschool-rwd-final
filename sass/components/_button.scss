@@ -11,6 +11,11 @@
   line-height: 1;
   cursor: pointer;
 
+  &--lg {
+    padding: 9px 48px;
+    margin: 0;
+  }
+
   &--primary {
     @include setBgColorAndHover(#f56c23);
   }

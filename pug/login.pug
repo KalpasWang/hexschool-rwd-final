@@ -21,23 +21,23 @@ html(lang="en")
     meta(property='og:image:height' content='50')
   body
     include ../includes/header.pug
-    .container.login-page
-      h2.svg-title 
-        a(href="#") 六角西餐廳
-      h3 享受美食好味道
-      .login
-        h3 LOGIN
+    .l-container.login-page
+      h2.login-page__title 
+        a(href="#").login-page__logo 六角西餐廳
+      h3.login-page__subtitle 享受美食好味道
+      .login-card
+        h3.login-card__title LOGIN
         form.login-form
-          label.label-email Email Address*
+          label.login-form__label Email Address*
             i.far.fa-envelope
-            input.login-input(type="email")
-          label.label-pwd Password*
+            input.login-form__input(type="email")
+          label.login-form__label Password*
             i.fas.fa-lock
-            input.login-input(type="password")
-          a.forget-pwd(href="") 忘記密碼？
-          .btn-group
-            a(href="register.html").btn.btn-secondary 註冊
-            input.btn.btn-primary(type="submit", value="登入")
+            input.login-form__input(type="password")
+          a.login-form__forget-pwd(href="") 忘記密碼？
+          .login-form__buttons-area
+            a(href="register.html").c-btn.c-btn--lg.c-btn--secondary 註冊
+            input.c-btn.c-btn--lg.c-btn--primary(type="submit", value="登入")
           
 
     include ../includes/footer.pug
