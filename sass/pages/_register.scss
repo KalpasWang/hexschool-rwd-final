@@ -1,0 +1,118 @@
+.register-page {
+  padding: 50px 0;
+
+  &__logo {
+    margin: 0 auto;
+    background-image: url(/assets/logo.png);
+    @include img-replace-text('/assets/logo.svg', 243px, 48px);
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: $text-lg;
+    font-weight: $font-bold;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+}
+
+.register-card {
+  width: 90%;
+  max-width: 620px;
+  border-top: 3px solid $text-secondary;
+  padding: 15px;
+  box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+  margin: auto;
+
+  &__title {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: $text-md;
+    font-weight: $font-black;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__content {
+    @include mobile-portrait() {
+      display: block;
+    }
+  }
+}
+
+.law {
+  margin-right: 20px;
+  max-width: 285px;
+  @include mobile-portrait() {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    line-height: 1.5;
+    font-size: $text-md;
+  }
+
+  &__details {
+    line-height: 1.4;
+  }
+}
+
+.register-form {
+  min-width: 250px;
+  @include mobile-portrait() {
+    max-width: 100%;
+  }
+
+  &__label-email {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__label-pwd {
+    display: block;
+    position: relative;
+    margin-bottom: 9px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 6px 0 6px 30px;
+    font-size: $text-base;
+    background: $text-white;
+    border: 1px solid #ccc;
+    box-shadow: inset 0px 1px 0px 0px #ececec;
+    border-radius: 3px;
+    margin-top: 3px;
+    outline: none;
+  }
+
+  &__repeat-pwd {
+    position: relative;
+  }
+
+  .fa-envelope, .fa-lock {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: $text-xs;
+    color: $text-primary;
+    opacity: 0.5;
+  }
+
+  &__has-account {
+    color: $text-secondary;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-size: $text-sm;
+    text-decoration: none;
+  }
+
+  .c-btn {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+  }
+}

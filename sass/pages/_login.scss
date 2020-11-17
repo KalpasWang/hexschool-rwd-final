@@ -9,8 +9,9 @@
 
   &__subtitle {
     text-align: center;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: $text-lg;
-    font-weight: $font-black;
+    font-weight: $font-bold;
     margin-top: 5px;
     margin-bottom: 35px;
   }
@@ -25,6 +26,7 @@
   margin: auto;
 
   &__title {
+    font-family: "Noto Sans TC", sans-serif;
     font-size: $text-md;
     font-weight: $font-black;
     margin-bottom: 16px;

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -125,6 +126,18 @@ table {
           align-items: flex-start;
 }
 
+.l-flex-sfs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .h-hide {
   display: none;
 }
@@ -152,15 +165,16 @@ body {
   top: 0;
 }
 
-.nav .l-flex-sbc {
+.nav__content {
   height: 100%;
 }
 
 .nav__logo {
   text-decoration: none;
   color: #fff;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 @media (max-width: 575px) {
@@ -197,7 +211,7 @@ body {
     background: rgba(0, 0, 0, 0.75);
   }
   .nav__menu.menu-show {
-    max-height: 200px;
+    max-height: 250px;
   }
 }
 
@@ -217,13 +231,18 @@ body {
   text-align: center;
   padding: 5px 10px;
   border-radius: 100px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 
 @media (max-width: 575px) {
   .nav__menu-link {
-    padding: 8px 0;
+    padding: 6px 0;
     display: block;
     letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
   }
 }
 
@@ -593,6 +612,10 @@ body {
   padding: 50px 0;
 }
 
+.testimonials .l-flex-sbfs {
+  overflow: auto;
+}
+
 @media (max-width: 575px) {
   .testimonials .l-flex-sbfs {
     display: block;
@@ -609,6 +632,7 @@ body {
 
 .testimonials .c-card {
   width: 29.3%;
+  min-width: 250px;
   text-align: left;
 }
 
@@ -1050,8 +1074,9 @@ body {
 
 .login-page__subtitle {
   text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   margin-top: 5px;
   margin-bottom: 35px;
 }
@@ -1067,6 +1092,7 @@ body {
 }
 
 .login-card__title {
+  font-family: "Noto Sans TC", sans-serif;
   font-size: 18px;
   font-weight: 900;
   margin-bottom: 16px;
@@ -1120,5 +1146,140 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.register-page {
+  padding: 50px 0;
+}
+
+.register-page__logo {
+  margin: 0 auto;
+  background-image: url(/assets/logo.png);
+  display: block;
+  background-image: url("/assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  width: 243px;
+  height: 48px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.register-page__subtitle {
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.register-card {
+  width: 90%;
+  max-width: 620px;
+  border-top: 3px solid #ff5e45;
+  padding: 15px;
+  -webkit-box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  margin: auto;
+}
+
+.register-card__title {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .register-card__content {
+    display: block;
+  }
+}
+
+.law {
+  margin-right: 20px;
+  max-width: 285px;
+}
+
+@media (max-width: 575px) {
+  .law {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.law__title {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.law__details {
+  line-height: 1.4;
+}
+
+.register-form {
+  min-width: 250px;
+}
+
+@media (max-width: 575px) {
+  .register-form {
+    max-width: 100%;
+  }
+}
+
+.register-form__label-email {
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.register-form__label-pwd {
+  display: block;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.register-form__input {
+  width: 100%;
+  padding: 6px 0 6px 30px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ececec;
+          box-shadow: inset 0px 1px 0px 0px #ececec;
+  border-radius: 3px;
+  margin-top: 3px;
+  outline: none;
+}
+
+.register-form__repeat-pwd {
+  position: relative;
+}
+
+.register-form .fa-envelope, .register-form .fa-lock {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #3d1101;
+  opacity: 0.5;
+}
+
+.register-form__has-account {
+  color: #ff5e45;
+  margin-top: 1px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.register-form .c-btn {
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
 }
 /*# sourceMappingURL=all.css.map */

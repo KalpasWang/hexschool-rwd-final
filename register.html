@@ -10,7 +10,7 @@
     <meta name="description" content="六角學院 RWD 最終作業的 register 頁面"/>
     <meta name="keywords" content="Kalpas Wang, HexSchool, RWD, 最終作業"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta property="og:title" content="六角學院 RWD 最終作業的 Logregisterin 頁面"/>
+    <meta property="og:title" content="六角學院 RWD 最終作業的 Register 頁面"/>
     <meta property="og:description" content="由王偉航（Kalpas Wang）所練習的 RWD 最終作業的 register 頁面"/>
     <meta property="og:url" content="網址"/>
     <meta property="og:type" content="website"/>
@@ -22,7 +22,7 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <div class="l-container l-flex-sbc">
+        <div class="nav__content l-container l-flex-sbc">
           <h1 class="nav__heading"><a class="nav__logo" href="index.html">六角西餐廳</a></h1>
           <ul class="nav__menu">
             <li class="nav__menu-item"><a class="nav__menu-link" href="index.html#feature">特色</a></li>
@@ -44,27 +44,27 @@
         </div>
       </div>
     </header>
-    <div class="container register-page">
-      <h2 class="svg-title"> <a href="#">六角西餐廳</a></h2>
-      <h3 class="sub-title">享受美食好味道</h3>
-      <div class="register">
-        <h3>REGISTER</h3>
-        <div class="register-content">
+    <div class="l-container register-page">
+      <h2 class="register-page__title"> <a class="register-page__logo" href="#">六角西餐廳</a></h2>
+      <h3 class="register-page__subtitle">享受美食好味道</h3>
+      <div class="register-card">
+        <h3 class="register-card__title">REGISTER</h3>
+        <div class="register-card__content l-flex-sfs">
           <div class="law">
-            <h4>就是這樣條款：</h4>
-            <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...</p>
+            <h4 class="law__title">就是這樣條款：</h4>
+            <p class="law__details">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien...</p>
           </div>
           <form class="register-form">
-            <label class="label-email">Email Address*<i class="far fa-envelope"></i>
-              <input class="register-input" type="email"/>
+            <label class="register-form__label-email">Email Address*<i class="far fa-envelope"></i>
+              <input class="register-form__input" type="email"/>
             </label>
-            <label class="label-pwd">Password*<i class="fas fa-lock"></i>
-              <input class="register-input" type="password"/>
+            <label class="register-form__label-pwd">Password*<i class="fas fa-lock"></i>
+              <input class="register-form__input" type="password"/>
             </label>
-            <div class="repeat-pwd"><i class="fas fa-lock"></i>
-              <input class="register-input" type="password"/>
-            </div><a class="has-account" href="">已經有帳號了？</a>
-            <input class="btn btn-primary" type="submit" value="註冊"/>
+            <div class="register-form__repeat-pwd"><i class="fas fa-lock"></i>
+              <input class="register-form__input" type="password"/>
+            </div><a class="register-form__has-account" href="login.html">已經有帳號了？</a>
+            <input class="c-btn c-btn--lg c-btn--primary" type="submit" value="註冊"/>
           </form>
         </div>
       </div>

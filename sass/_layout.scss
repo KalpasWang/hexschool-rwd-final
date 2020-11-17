@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap");
+
 body {
   background: $bg-color;
   font-family: "Microsoft JhengHei", sans-serif;
@@ -16,15 +18,16 @@ body {
   position: absolute;
   top: 0;
 
-  .l-flex-sbc {
+  &__content {
     height: 100%;
   }
 
   &__logo {
     text-decoration: none;
     color: $text-white;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: $text-xl;
-    font-weight: $font-black;
+    font-weight: $font-bold;
     @include mobile-portrait() {
       font-size: $text-md;
     }
@@ -47,7 +50,7 @@ body {
       right: 0;
       background: rgba(0,0,0,0.75);
       &.menu-show {
-        max-height: 200px;
+        max-height: 250px;
       }
     }
   }
@@ -65,10 +68,12 @@ body {
     text-align: center;
     padding: 5px 10px;
     border-radius: 100px;
+    transition: background 0.5s;
     @include mobile-portrait() {
-      padding: 8px 0;
+      padding: 6px 0;
       display: block;
       letter-spacing: 5px;
+      @include title-md;
     }
   }
 
